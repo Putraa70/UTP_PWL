@@ -1,66 +1,178 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Siap Putra!
+Berikut **README.md FULL, KOMPLIT, dan semuanya dalam satu code block**.
+Tinggal **copy–paste** langsung ke GitHub tanpa tambahan apa pun.
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# ✅ **README.md — SIAP PASTE**
 
-## About Laravel
+```md
+# 📌 HIMAKOM Manager – Laravel 10
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Sistem Manajemen Kegiatan & Kepanitiaan  
+UTP Pemrograman Web Lanjut (PWL) – Universitas Lampung
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## ✨ Deskripsi Project
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+HIMAKOM Manager adalah aplikasi web berbasis **Laravel 10** untuk mengelola:
 
-## Learning Laravel
+-   Data kegiatan HIMAKOM
+-   Kepanitiaan setiap kegiatan
+-   Progress kerja panitia
+-   Role-based access (Admin & Panitia)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Project ini dibuat sebagai bagian dari **UTP Pemrograman Web Lanjut (PWL)** dengan implementasi:
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+-   MVC Laravel
+-   Relasi Many-to-Many
+-   Middleware & Policy
+-   Blade + Bootstrap 5
+-   Tema modern Rich-Black × Vivid-Yellow
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🛠 Fitur Utama
 
-## Laravel Sponsors
+### 👑 Admin
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+-   CRUD Kegiatan (nama, tanggal, lokasi, deskripsi)
+-   CRUD Panitia per kegiatan (tambah, ubah jabatan, hapus)
+-   Melihat semua progress kegiatan
+-   Dashboard admin modern & clean
 
-### Premium Partners
+### 👤 Panitia
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+-   Melihat daftar kegiatan yang diikuti
+-   Melihat detail progja (info kegiatan)
+-   CRUD progress (hanya milik sendiri)
+-   Status: `PLANNED`, `ONGOING`, `BLOCKED`, `DONE`
 
-## Contributing
+### 📈 Progress Monitoring
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+-   Persentase progress (0–100%)
+-   Deskripsi pekerjaan
+-   Akses dibatasi oleh Policy (keamanan terjaga)
 
-## Code of Conduct
+## 📂 Struktur Folder Utama
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+app/
+├── Http/
+│ ├── Controllers/
+│ ├── Middleware/
+│ └── Requests/
+├── Models/
 
-## Security Vulnerabilities
+resources/
+└── views/
+├── auth/
+├── dashboard/
+├── kegiatan/
+├── panitia/
+└── layouts/
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+public/
+├── css/
+└── assets/
 
-## License
+database/
+├── migrations/
+└── seeders/
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+````
+
+
+
+## 🚀 Instalasi & Menjalankan Project
+
+### 1️⃣ Clone repository
+```bash
+git clone https://github.com/Putraa70/UTP_PWL.git
+cd UTP_PWL
+````
+
+### 2️⃣ Install dependency Laravel
+
+```bash
+composer install
+```
+
+### 3️⃣ Install dependency frontend (opsional)
+
+```bash
+npm install
+npm run build
+```
+
+### 4️⃣ Copy file environment
+
+```bash
+cp .env.example .env
+```
+
+### 5️⃣ Generate key Laravel
+
+```bash
+php artisan key:generate
+```
+
+### 6️⃣ Atur database di `.env`
+
+Contoh PostgreSQL:
+
+```
+DB_CONNECTION=pgsql
+DB_HOST=127.0.0.1
+DB_PORT=5432
+DB_DATABASE=himakom
+DB_USERNAME=postgres
+DB_PASSWORD=your_password
+```
+
+### 7️⃣ Migrasi database + seeder
+
+```bash
+php artisan migrate --seed
+```
+
+### 8️⃣ Jalankan server
+
+```bash
+php artisan serve
+```
+
+Akses di browser:
+
+```
+http://localhost:8000
+```
+
+## 🔐 Akun Login Default (Seeder)
+
+```txt
+Admin:
+email: admin@example.com
+password: password
+
+Panitia:
+email: panitia@example.com
+password: password
+```
+
+## 🎨 Tema UI
+
+Desain menggunakan:
+
+-   **Rich Black Base**
+-   **Vivid Yellow Accent**
+-   Card modern & shadow elevation
+-   Bootstrap Icons
+-   Navbar blur aesthetic
+
+## 👨‍💻 Developer
+
+**Putra**
+Ilmu Komputer – FMIPA Universitas Lampung
+GitHub: [https://github.com/Putraa70](https://github.com/Putraa70)
+
+## 📝 Lisensi
+
+Project ini dibuat untuk keperluan akademik
+**UTP Pemrograman Web Lanjut (PWL)**
+Universitas Lampung.

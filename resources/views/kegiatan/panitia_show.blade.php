@@ -1,10 +1,13 @@
 @extends('layouts.app')
 @section('content')
 
-<div class="d-flex justify-content-between align-items-center mb-3">
-  <div>
-    <h3 class="fw-bold mb-0"><i class="bi bi-calendar2-heart text-warning me-2"></i>Detail Progja</h3>
-    <div class="muted small">{{ $kegiatan->nama }}</div>
+<div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-2 mb-3">
+  <div class="d-flex align-items-center gap-2">
+    <button onclick="history.back()" class="btn btn-ghost"><i class="bi bi-arrow-left me-1"></i>Back</button>
+    <div>
+      <h3 class="fw-bold mb-0"><i class="bi bi-calendar2-heart text-warning me-2"></i>Detail Progja</h3>
+      <div class="muted small">{{ $kegiatan->nama }}</div>
+    </div>
   </div>
   <span class="badge badge-yy rounded-pill px-3 py-2">
     {{ optional($kegiatan->pivot)->jabatan ?? 'Panitia' }}

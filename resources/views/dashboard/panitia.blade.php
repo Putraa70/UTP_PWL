@@ -1,6 +1,8 @@
 @extends('layouts.app')
 @section('content')
-<h3 class="fw-bold mb-3"><i class="bi bi-list-task text-warning me-2"></i>Kegiatan Saya</h3>
+<div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-2 mb-3">
+  <h3 class="fw-bold mb-0"><i class="bi bi-list-task text-warning me-2"></i>Kegiatan Saya</h3>
+</div>
 
 @if($kegiatanSaya->isEmpty())
   <div class="alert border-0" style="background:#1e1e1e;color:#cfcfcf;border-radius:12px;">

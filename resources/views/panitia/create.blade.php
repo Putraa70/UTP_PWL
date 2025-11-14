@@ -1,10 +1,13 @@
 @extends('layouts.app')
 @section('content')
 
-<h3 class="fw-bold mb-3">
-  <i class="bi bi-person-plus text-warning me-2"></i>
-  Tambah Panitia — {{ $kegiatan->nama }}
-</h3>
+<div class="d-flex flex-column flex-md-row align-items-start align-items-md-center gap-2 mb-3">
+  <button onclick="history.back()" class="btn btn-ghost"><i class="bi bi-arrow-left me-1"></i>Back</button>
+  <h3 class="fw-bold mb-0">
+    <i class="bi bi-person-plus text-warning me-2"></i>
+    Tambah Panitia — {{ $kegiatan->nama }}
+  </h3>
+</div>
 
 <form method="POST" action="{{ route('kegiatan.panitia.store',$kegiatan) }}" class="row g-3">
   @csrf

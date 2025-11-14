@@ -1,7 +1,10 @@
 @extends('layouts.app')
 @section('content')
-<div class="d-flex justify-content-between align-items-center mb-3">
-  <div><div class="muted small">Kegiatan</div><h3 class="fw-bold mb-0"><i class="bi bi-people text-warning me-2"></i>{{ $kegiatan->nama }}</h3></div>
+<div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-2 mb-3">
+  <div class="d-flex align-items-center gap-2">
+    <button onclick="history.back()" class="btn btn-ghost"><i class="bi bi-arrow-left me-1"></i>Back</button>
+    <div><div class="muted small">Kegiatan</div><h3 class="fw-bold mb-0"><i class="bi bi-people text-warning me-2"></i>{{ $kegiatan->nama }}</h3></div>
+  </div>
   <a href="{{ route('kegiatan.panitia.create',$kegiatan) }}" class="btn btn-yy fw-semibold"><i class="bi bi-person-plus me-1"></i>Tambah Panitia</a>
 </div>
 

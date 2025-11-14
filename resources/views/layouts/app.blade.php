@@ -140,7 +140,7 @@
 </main>
 
 <footer class="py-4 text-center small" style="color:white;">
-  <i class="bi bi-stars me-1"></i>Built for HIMAKOM <span style="color:var(--vivid-yellow)">Management</span>
+  <i class="bi bi-stars me-1"></i>© HIMAKOM <span style="color:var(--vivid-yellow)">FMIPA UNILA</span>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

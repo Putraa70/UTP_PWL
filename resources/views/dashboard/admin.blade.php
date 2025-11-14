@@ -2,14 +2,14 @@
 @section('content')
 
 {{-- Header ringkas --}}
-<div class="d-flex justify-content-between align-items-center mb-4">
+<div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3 mb-4">
   <div>
     <h3 class="fw-bold mb-0">
       <i class="bi bi-speedometer2 me-2 text-warning"></i>Dashboard Admin
     </h3>
     <div class="muted">Kelola semua kegiatan & kepanitiaan.</div>
   </div>
-  <div class="d-flex gap-2">
+  <div class="d-flex flex-column flex-sm-row gap-2">
     <a href="{{ route('kegiatan.create') }}" class="btn btn-yy fw-semibold">
       <i class="bi bi-plus-circle me-1"></i>Tambah Kegiatan
     </a>
@@ -49,7 +49,7 @@
         <div>
           <div class="fw-semibold">Admin: {{ auth()->user()->name }}</div>
           <div class="muted small">Gunakan menu untuk mengelola data.</div>
-          <div class="d-flex gap-2 mt-2">
+          <div class="d-flex flex-column flex-sm-row gap-2 mt-2">
             <a href="{{ route('kegiatan.index') }}" class="btn btn-sm btn-ghost">
               <i class="bi bi-people me-1"></i>Kelola Panitia
             </a>
@@ -70,7 +70,7 @@
 @if($recent->isNotEmpty())
   <div class="card card-modern elev">
     <div class="card-body">
-      <div class="d-flex align-items-center justify-content-between mb-2">
+      <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center justify-content-between gap-2 mb-2">
         <div class="fw-semibold">
           <i class="bi bi-clock-history text-warning me-1"></i>Terbaru Dibuat
         </div>
@@ -99,7 +99,7 @@
                 </td>
                 <td>{{ $it->lokasi ?? '—' }}</td>
                 <td>
-                  <div class="btn-group">
+                  <div class="btn-group flex-column flex-sm-row">
                     <a href="{{ route('kegiatan.show',$it) }}" class="btn btn-sm btn-ghost">
                       <i class="bi bi-eye me-1"></i>Detail
                     </a>

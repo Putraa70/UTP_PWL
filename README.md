@@ -1,4 +1,4 @@
-# 📌 HIMAKOM Manager – Laravel 10
+# 📌 HIMAKOM Manager – Laravel 11
 Sistem Manajemen Kegiatan & Kepanitiaan  
 UTP Pemrograman Web Lanjut (PWL) – Universitas Lampung
 
